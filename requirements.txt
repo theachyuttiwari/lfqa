@@ -1,0 +1,9 @@
+nltk
+streamlit
+sentence_transformers
+requests
+pyjwt
+typing
+streamlit_option_menu
+google-auth
+google-cloud-texttospeech
