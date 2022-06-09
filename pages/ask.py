@@ -285,7 +285,7 @@ def app():
 
     question = st.text_input(
        label='Ask Wikipedia an open-ended question below; for example, "Why do airplanes leave contrails in the sky?"')
-    question = ""
+    #question = ""
     spinner = st.empty()
     if question !="":
         spinner.markdown(
