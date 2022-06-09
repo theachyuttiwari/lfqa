@@ -270,14 +270,14 @@ def get_answer(question: str):
 def app():
     with open('style.css') as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    footer = """
+    footer = 
         <div class="footer-custom">
             Streamlit app - <a href="https://www.linkedin.com/in/danijel-petkovic-573309144/" target="_blank">Danijel Petkovic</a>  |   
             LFQA/DPR models - <a href="https://www.linkedin.com/in/blagojevicvladimir/" target="_blank">Vladimir Blagojevic</a>   |
             Guidance & Feedback - <a href="https://yjernite.github.io/" target="_blank">Yacine Jernite</a> |
             <a href="https://towardsdatascience.com/long-form-qa-beyond-eli5-an-updated-dataset-and-approach-319cb841aabb" target="_blank">Blog</a>
         </div>
-    """
+    
     st.markdown(footer, unsafe_allow_html=True)
 
     st.title('Wikipedia Assistant')
@@ -289,16 +289,15 @@ def app():
     spinner = st.empty()
     if question !="":
         spinner.markdown(
-            f"
+            f"""
             <div class="loader-wrapper">
             <div class="loader">
             </div>
             <p>Generating answer for: <b>{question}</b></p>
             </div>
             <label class="loader-note">Answer generation may take up to 20 sec. Please stand by.</label>
-            ",
+        """,
             unsafe_allow_html=True,
-            
         )
 
     question_response = get_answer(question)
