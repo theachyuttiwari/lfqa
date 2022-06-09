@@ -289,14 +289,13 @@ def app():
     spinner = st.empty()
     if question !="":
         spinner.markdown(
-            f""
+            f'
             <div class="loader-wrapper">
             <div class="loader">
             </div>
             <p>Generating answer for: <b>{question}</b></p>
             </div>
-            <label class="loader-note">Answer generation may take up to 20 sec. Please stand by.</label>
-        "",
+            <label class="loader-note">Answer generation may take up to 20 sec. Please stand by.</label>',
             unsafe_allow_html=True,
         )
 
